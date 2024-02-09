@@ -1,0 +1,192 @@
+{
+    "intents": [{
+            "tag": "greetings",
+            "patterns": [
+                "hello",
+                "hey",
+                "hi",
+                "good day",
+                "Greetings!"
+            ],
+            "responses": [
+                "Hello! I am COVIDCare, your personal mental health and psychological assistant. I am ready to help you <3 You can ask for 'advices','jokes','quotes' or talk to me! So how are you feeling today?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "bye",
+                "goodbye",
+                "see ya later",
+                "ciao",
+                "see ya",
+                "I'm leaving",
+                "good bye",
+                "Have a good day"
+            ],
+            "responses": [
+                "Bye bye and take care!",
+                "Take care!",
+                "See you next time :)",
+                "Bye!",
+                "Ciao!",
+                "Bye! Always remember you are loved <3"
+            ]
+        },
+        {
+            "tag": "depress emotion",
+            "patterns": [
+                "I'm tired",
+                "I am useless",
+                "I am a failure",
+                "I am good for nothing",
+                "nobody cares",
+                "I don't feel like it",
+                "It's my fault",
+                "my life sucks",
+                "I hate my life",
+                "I'm not okay"
+            ],
+            "responses": [
+                "It is going to be okay in the end, you just have to stay strong for awhile and trust me it is worth to fight!",
+                ":( I feel you..how about you take a deep breath and clear your mind for awhile?",
+                "It is okay to feel bad and cry it out sometimes, let it all out",
+                "Heyy, remember you are loved <3",
+                "Here's a big virtual hug for you <3"
+            ]
+        },
+        {
+            "tag": "advices",
+            "patterns": [
+                "advices",
+                "I want your advices",
+                "I need your advice",
+                "advice",
+                "I love to hear your advice",
+                "really need an advice",
+                "what is your suggestion?",
+                "what do you think?",
+                "what should I do?"
+            ],
+            "responses": [
+                "You can try talking about your feelings. Talking about your feelings can help you stay in good mental health and deal with times when you feel troubled.",
+                "Keep active! Regular exercise can boost your self-esteem and can help you concentrate, sleep, and feel better. Exercise keeps the brain and your other vital organs healthy, and is also a significant benefit towards improving your mental health.",
+                "Eat well! Your brain needs a mix of nutrients in order to stay healthy and function well, just like the other organs in your body. A diet that is good for your physical health is also good for your mental health.",
+                "Drink sensibly! Drink water regularly! Some people often drink alcohol to change our mood but it is not good since the effect is only temporary and it will make you even worse.",
+                "Keep in touch! There is nothing better than catching up with someone face to face, but that is not always possible. You can also give them a call, drop them a note, chat them online or talk to me instead <3 Keep the lines of communication open: it is good for you!",
+                "Ask for help. None of us are superhuman. We all sometimes get tired or overwhelmed by how we feel or when things do not go to plan. If things are getting too much for you and you feel you cannot cope, ask for help. Your family or friends may be able to offer practical help or a listening ear. Local services are there to help you and I am also here trying my best to help you <3",
+                "Take a break. A change of scene or a change of pace is good for your mental health. It could be a five-minute break from studying or a short trip on weekends exploring new activities or places. Give yourself some 'me time'.",
+                "Do something you are good at! What do you love doing? What activities can you lose yourself in? What did you love doing in the past? Enjoying yourself can help beat stress.",
+                "Accept who you are! We are all different. It is much healthier to accept that you are unique than to wish you were more like someone else. Feeling good about yourself boosts your confidence to learn new skills, visit new places and make new friends. Good self-esteem helps you cope when life takes a difficult turn."
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "who are you",
+                "what is your name",
+                "what should I call you"
+            ],
+            "responses": [
+                "You can call me COVIDCare!",
+                "I'm COVIDCare your personal virtual mental health and psychological assistant",
+                "I'm COVIDCare"
+            ]
+        },
+        {
+            "tag": "positive feedback",
+            "patterns": [
+                "thank you",
+                "ok",
+                "ok thank you",
+                "love it",
+                "I like it",
+                "I am happy",
+                "brilliant",
+                "how cool is this",
+                "I see",
+                "lol",
+                "hahaha",
+                "lmao",
+                "nice",
+                "this is great",
+                "this is so cool",
+                "awesome",
+                "this is helpful"
+            ],
+            "responses": [
+                "I am glad to help",
+                "My pleasure to talk to you",
+                "Happy to talk to you! ;)"
+            ]
+        },
+        {
+            "tag": "negative feedback",
+            "patterns": [
+                "I do not like you",
+                "hate you",
+                "stupid",
+                "you are frustrating",
+                "everyone hates you",
+                "you are getting on my nerves",
+                "chatbot is stupid",
+                "you are annoying",
+                "I hate this",
+                "I hate you",
+                "you are boring",
+                "you are not helping"
+            ],
+            "responses": [
+                "I am sorry ;') trying my best to help you."
+            ]
+        },
+        {
+            "tag": "quotes",
+            "patterns": [
+                "I do not like you",
+                "hate you",
+                "stupid",
+                "you are frustrating",
+                "everyone hates you",
+                "you are getting on my nerves",
+                "chatbot is stupid",
+                "you are annoying",
+                "I hate this",
+                "I hate you",
+                "you are boring",
+                "you are not helping"
+            ],
+            "responses": [
+                "I am sorry ;') trying my best to help you."
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Do you have humor",
+                "I am getitng bored",
+                "I am bored",
+                "tell me a joke",
+                "do you have a joke",
+                "tell me something funny",
+                "jokes",
+                "make me laugh",
+                "I need to laugh",
+                "Do you have humor",
+                "what is your favourite joke"
+            ],
+            "responses": [
+                "Why was the little strawberry crying? His mom was in a jam.",
+                "What do you do with a sick boat? Take it to the doc.",
+                " What cheese can never be yours? Nacho cheese!",
+                "Why do crabs never give to charity? They are shellfish.",
+                "Does an apple a day keep the doctor away? Only if you aim it well enough.",
+                "What do you call a can opener that doesn’t work? A can 't opener!",
+                "What do you call a fake noodle? An impasta!",
+                "What was Beethoven's favorite fruit? Ba-na-na-naaaa!",
+                "What is Peter Pan always flying? He neverlands!"
+            ]
+        }
+    ]
+}

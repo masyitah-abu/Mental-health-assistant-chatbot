@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+  position: relative;
+}
+.brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;  /* 50% of your logo width */
+  display: block;
+}
+
+.content{
+  background: white;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.5cm;
+	box-shadow: 0 0 0.1cm rgba(0,0,0,0.5);
+	width: 26cm;
+	height: auto;   
+  max-width: 100% ;margin: auto;  text-align: justify; line-height: 0.6; text-justify: inter-word; font-size:15px;padding-bottom: 50px; 
+  padding-top: 50px; 
+  padding:30px; 
+}
+
+.back-btn{
+  background: white;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.5cm; 
+	width: 26cm;
+	height: auto;   
+  max-width: 100% ;  
+}
+ 
+
+.round {
+    border-radius: 50%;
+  }
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+body { 
+    align-items: center;
+    justify-content: center;  
+  }
+  .fornav{
+    width:70%; 
+    background-color: #03414D; 
+    border-radius:0px;
+}
+  
+.navbar-title{
+    color:white;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+video { 
+    width: 800px;
+    height: auto;
+  }
+
+  .img-contact{
+      width: 100px;
+      margin-bottom:30px;
+      height: auto;
+  }
+
+ .wrapper{
+    text-align: center;  
+ } 
+
+ .wrapper2 {
+    width: 324px; 
+    height: 130px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .icon {
+    height: 50px;
+    width: 49%;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: bottom;
+  }
+  
+  .icon img {
+    width: 50px;
+    float: right;
+  }
+  
+  .text {
+    display: inline-block;
+    width: 49%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+
+ 
+ .button {
+    background-color: #03414D;
+    border: none;
+    color: white;
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .button:hover{
+    background-color: #095868;
+    color: white;
+    text-decoration: none;
+  }
+  #wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+#content {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+
+.messagebox{
+    position: fixed;     
+       text-align: center;    
+       bottom: 30px; 
+       width: 100%;
+}
+
+.imessage {
+    background-color: #fff; 
+    display: flex;
+    flex-direction: column;
+    font-family: "SanFrancisco";
+    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .imessage p {
+    border-radius: 1.15rem;
+    line-height: 1.25;
+    max-width: 75%;
+    padding: 0.5rem .875rem;
+    position: relative;
+    word-wrap: break-word;
+  }
+  
+  .imessage p::before,
+  .imessage p::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+  }
+  
+  p.from-me {
+    align-self: flex-end;
+    background-color: #248bf5;
+    color: #fff; 
+  }
+  
+  p.from-me::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1rem solid #248bf5;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.from-me::after {
+    background-color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    right: -40px;
+    transform:translate(-30px, -2px);
+    width: 10px;
+  }
+  
+  p[class^="from-"] {
+    margin: 0.5rem 0;
+    width: fit-content;
+  }
+  
+  p.from-me ~ p.from-me {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.from-me ~ p.from-me:not(:last-child) {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.from-me ~ p.from-me:last-child {
+    margin-bottom: 0.5rem;
+  }
+  
+  p.from-them {
+    align-items: flex-start;
+    background-color: #e5e5ea;
+    color: #000;
+  }
+  
+  p.from-them:before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    border-left: 1rem solid #e5e5ea;
+    left: -0.35rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.from-them::after {
+    background-color: #fff;
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+  }
+  
+  p[class^="from-"].emoji {
+    background: none;
+    font-size: 2.5rem;
+  }
+  
+  p[class^="from-"].emoji::before {
+    content: none;
+  }
+  
+  .no-tail::before {
+    display: none;
+  }
+  
+  .margin-b_none {
+    margin-bottom: 0 !important;
+  }
+  
+  .margin-b_one {
+    margin-bottom: 1rem !important;
+  }
+  
+  .margin-t_one {
+    margin-top: 1rem !important;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+ /* MEDIA QUERY */
+ @media only screen and (max-width: 600px) {
+    .content{
+        width: 98%;
+        margin: auto; 
+     }
+
+     .fornav{
+        width:100%;  
+        border-radius:0;
+    }
+
+    video { 
+        width: 100%;
+        height: auto;
+      }
+ 
+
+  }
+   
+
+   /* MEDIA QUERY */
+ @media only screen and (max-width: 500px) { 
+    video { 
+        width: 100%;
+        height: auto;
+      }
+ 
+      .content{ 
+        box-shadow: none; 
+      }
+
+  }
+   

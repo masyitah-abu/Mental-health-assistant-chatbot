@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVIDCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <center>
+        <nav class="navbar navbar-light fornav" style="border-radius:0px;">
+            <a href="{{url_for('home')}}" class="navbar-brand navbar-title" style="border-radius:0px;">Form</a>
+        </nav>
+    </center>
+
+
+    <div class="back-btn">
+
+        <a href="{{url_for('chat')}}" class="link-primary">
+            <img src="https://img.icons8.com/color/48/000000/back--v1.png" style="width: 25px;" /> Back
+
+        </a>
+    </div>
+
+
+
+    <form id='survey' action="{{url_for('my_form_post')}}" method='post'>
+
+        <div class="content" style="margin-bottom: 30px;">
+
+
+            <div class="mt-3 mb-3 form-width form-group">
+                <h5>Name</h5>
+                <input class="form-control" id="name-input" type="text" name="name-input" placeholder="First and last name" required>
+            </div>
+
+
+            <div style="padding-top:10px" class="form-group">
+                <h5>Age</h5>
+                <input class="form-control" id="age-input" type="number" name="age-input" placeholder="Your age" max=90 min=1 required>
+            </div>
+            <div>
+                <h5>Gender</h5>
+                <select name="gender-input" class="form-control" id="gender-input" required>
+                    <option value="" disabled selected></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>How would you describe your experience at your workplace/college/school in the past few days?</h5>
+                <input class="form-control" id="MQ1-input" type="text" name="MQ1-input" placeholder="Answer" required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>How do you like to spend your leisure time? How do you feel after it?</h5>
+                <input class="form-control" id="MQ2-input" type="text" name="MQ2-input" placeholder="Answer" required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>Life has its ups and downs. Although handling successes can be difficult, setbacks can affect mental health strongly. How do you manage your emotions after failures?</h5>
+                <input class="form-control" id="MQ3-input" type="text" name="MQ3-input" placeholder="Answer" required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>Any recent pleasant experience that you would like to share?</h5>
+                <input class="form-control" id="MQ4-input" type="text" name="MQ4-input" placeholder="Answer" required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>Any recent unpleasant experience that you would like to share?</h5>
+                <input class="form-control" id="MQ5-input" type="text" name="MQ5-input" placeholder="Answer" required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In a broad sense, how would you describe the way your life is going on?</h5>
+                <input class="form-control" id="MQ6-input" type="text" name="MQ6-input" placeholder="Answer" required>
+            </div>
+
+            <br>
+            <hr>
+
+            <h1 class="mb-3">Stress Level Survey based on Perceived Stress Scale</h1>
+            <h3>1 - never, 2 - almost never, 3 - sometimes, 4 - fairly often, 5 - very often</h3>
+            <br>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>'In the last month, how often have you been upset because of something that happened unexpectedly?'</h5>
+                <input class="form-control" id="SQ1-input" type="number" name="SQ1-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>'In the last month, how often have you felt that you were unable to control the important things in your life?'</h5>
+                <input class="form-control" id="SQ2-input" type="number" name="SQ2-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>'In the last month, how often have you felt nervous and stressed?'</h5>
+                <input class="form-control" id="SQ3-input" type="number" name="SQ3-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In the last month, how often have you felt confident about your ability to handle your personal problems?</h5>
+                <input class="form-control" id="SQ4-input" type="number" name="SQ4-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In the last month, how often have you felt that things were going your way?</h5>
+                <input class="form-control" id="SQ5-input" type="number" name="SQ5-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In the last month, how often have you found that you could not cope with all the things that you had to do?</h5>
+                <input class="form-control" id="SQ6-input" type="number" name="SQ6-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In the last month, how often have you been able to control irritations in your life?</h5>
+                <input class="form-control" id="SQ7-input" type="number" name="SQ7-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In the last month, how often have you felt that you were on top of things?</h5>
+                <input class="form-control" id="SQ8-input" type="number" name="SQ8-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In the last month, how often have you been angered because of things that happened that were outside of your control?</h5>
+                <input class="form-control" id="SQ9-input" type="number" name="SQ9-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div style="padding-top:10px" class="mt-3 mb-3 form-group">
+                <h5>In the last month, how often have you felt difficulties piling up so high that you could not overcome them?</h5>
+                <input class="form-control" id="SQ10-input" type="number" name="SQ10-input" placeholder="Choose between 1-5" max=5 min=1 required>
+            </div>
+            <div id="fail"></div>
+
+            <center>
+                <input class="btn btn-primary form-width btn-warning" style="margin-right:10px;" type="reset" value="Reset">
+                <button id="check" class="btn btn-primary form-width btn-dark" onclick="btnClicked()">Submit</button>
+            </center>
+
+        </div>
+
+        </div>
+    </form>
+    <script>
+        function
+        btnClicked() {
+            document.location.href = "{{url_for('my_form_post')}}";
+        }
+
+        document.getElementById("check").onclick = function() {
+            let allAreFilled = true;
+            document.getElementById("survey").querySelectorAll("[required]").forEach(function(i) {
+                if (!allAreFilled) return;
+                if (!i.value) allAreFilled = false;
+                if (i.type === "radio") {
+                    let radioValueCheck = false;
+                    document.getElementById("survey").querySelectorAll(`[name=${i.name}]`).forEach(function(r) {
+                        if (r.checked) radioValueCheck = true;
+                    })
+                    allAreFilled = radioValueCheck;
+                }
+            })
+            if (!allAreFilled) {
+                alert('Fill all the fields');
+            }
+        };
+    </script>
+
+</body>
+
+</html>

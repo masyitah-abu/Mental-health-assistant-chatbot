@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVIDCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <center>
+        <nav class="navbar navbar-light fornav" style="border-radius:0px;">
+            <a href="menu.html" class="navbar-brand navbar-title" style="border-radius:0px;">COVIDCare</a>
+        </nav>
+    </center>
+
+    <div class="wrapper">
+
+
+        <div class="logo">
+            <img src="{{ url_for('static', filename='pictures/chatbot.png')}}" width="350" height="350" />
+        </div>
+        <div class="form">
+            <div>
+
+                <a href="{{url_for('chat')}}" class="button"> Chat with me </a> <br><br>
+
+                <a href="{{url_for('helper')}}" class="button"> Healthcare Helper
+                </a> <br><br>
+
+                <a href="{{url_for('contact')}}" class="button">Contact Us </a> <br><br>
+            </div>
+        </div>
+</body>
+
+</html>

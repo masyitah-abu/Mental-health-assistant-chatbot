@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVIDCare | Eating Habits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head> 
+<body> 
+    
+ 
+  <center>
+    <nav class="navbar navbar-light fornav" style="border-radius:0px;">
+      <a href="{{url_for('home')}}" class="navbar-brand navbar-title" style="border-radius:0px;" >Eating Habits</a>
+    </nav>
+  </center>
+
+  <div class="back-btn">
+    
+    <a href="{{url_for('helper')}}" class="link-primary">
+      <img src="https://img.icons8.com/color/48/000000/back--v1.png" style="width: 25px;"/> 
+      
+      Back</a> 
+  </div>
+
+    <div class="wrapper"> 
+
+        <video   controls>
+            <source src="{{ url_for('static', filename='videos/eatinghabits/1.mp4')}}" type="video/mp4">  
+          </video>
+
+          <video style="padding-top:30px" controls>
+            <source src="{{ url_for('static', filename='videos/eatinghabits/2.mp4')}}" type="video/mp4">  
+          </video>
+         
+
+          <video style="padding-top:30px" controls>
+            <source src="{{ url_for('static', filename='videos/eatinghabits/3.mp4')}}" type="video/mp4">  
+          </video>
+
+          <video style="padding-top:30px" controls>
+            <source src="{{ url_for('static', filename='videos/eatinghabits/4.mp4')}}" type="video/mp4">  
+          </video>
+
+          <video style="padding-top:30px" controls>
+            <source src="{{ url_for('static', filename='videos/eatinghabits/5.mp4')}}" type="video/mp4">  
+          </video>
+
+          <video style="padding-top:30px" controls>
+            <source src="{{ url_for('static', filename='videos/eatinghabits/6.mp4')}}" type="video/mp4">  
+          </video>
+
+          <video style="padding-top:30px" controls>
+            <source src="{{ url_for('static', filename='videos/eatinghabits/7.mp4')}}" type="video/mp4">  
+          </video>
+
+    </div>
+</body>
+
+</html>
